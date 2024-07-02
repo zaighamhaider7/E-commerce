@@ -120,14 +120,14 @@ let url2 = "https://api.escuelajs.co/api/v1/products"
 fetch(url2)
 
 .then(Response => Response.json())
-.then((data)=>{
-    console.log(data);
+.then((product)=>{
+    console.log(product);
         for (let i = 0; i < 6; i++) {
-          console.log(data[i]);
-          let title = data[i].title
+          console.log(product[i]);
+          let title = product[i].title
           let titlewords = title.split(' ')
           let limitedtitile = titlewords.slice(0, 5).join(' ')
-          let description = data[i].description;
+          let description = product[i].description;
           let words = description.split(' ');
           let limitedWords = words.slice(0, 20).join(' ');
 
@@ -139,12 +139,12 @@ fetch(url2)
               `
               <div class="col col-lg-4 col-md-6 col-sm-6 mt-3 col-align">
                   <div class="card product-card">
-                      <img src="${data[i].images[0][1]}" class="card-img-top product-img" alt="Product image">
+                      <img src="${product[i].images[0]}" class="card-img-top product-img" alt="Product image">
                       <div class="card-body">
                           <h4 class="card-title">${limitedtitile}</h4>
                           <p class="card-text">${limitedWords}</p>
                           <div class="price-btn">
-                              <h5>$${data[i].price}</h5>
+                              <h5>$${product[i].price}</h5>
                               <button type="button" class="addtocart">Add to cart</button>
                           </div>
                       </div>
@@ -163,7 +163,7 @@ fetch(url2)
                 document.getElementById("viewless-2").style.display = "block";
                 document.querySelector(".row-four").style.display = "flex";
               
-                if (!Array.isArray(data) || data.length < 12) {
+                if (!Array.isArray(product) || product.length < 12) {
                   console.error('data array is not valid or does not have enough items.');
                   return;
                 }
@@ -171,10 +171,10 @@ fetch(url2)
                 // Add the products to the container
                 for (let i = 6; i < 12; i++) {
                  
-                 let title = data[i].title
+                 let title = product[i].title
                  let titlewords = title.split(' ')
                  let limitedtitile = titlewords.slice(0, 5).join(' ')
-                 let description = data[i].description
+                 let description = product[i].description
                  let descriptionwords = description.split(' ')
                  let limiteddescription = descriptionwords.slice(0, 18).join(' ')
   
@@ -183,7 +183,7 @@ fetch(url2)
                   limiteddescription += '...';
               }
   
-                  if (!data[i]) {
+                  if (!product[i]) {
                     console.error(`Product at index ${i} is not defined.`);
                     continue;
                   }
@@ -192,12 +192,12 @@ fetch(url2)
                   `
                   <div class="col col-lg-4 col-md-6 col-sm-6 mt-3 col-align">
                    <div class="card product-card">
-                   <img src="${data[i].image}" class="card-img-top product-img" alt="Product imagessss...">
+                   <img src="${product[i].images[0]}" class="card-img-top product-img" alt="Product imagessss...">
                   <div class="card-body">
               <h4 class="card-title">${limitedtitile}</h4>
               <p class="card-text">${limiteddescription}</p>
               <div class="price-btn">
-                <h5> $${data[i].price}</h5>
+                <h5> $${product[i].price}</h5>
                 <button class="addtocart">Add to cart</button>
                 </div>
                 </div>
