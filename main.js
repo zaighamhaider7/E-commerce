@@ -6,24 +6,60 @@ fetch(url)
     console.log(data);
 
         // for loop  
+        // for (let i = 0; i < 6; i++) {
+        //     document.querySelector(".row-one").innerHTML +=
+        //       `
+        //               <div class="col col-lg-4 col-md-6 col-sm-6 mt-3">
+        //                <div class="card">
+        //                <img src="${data[i].image}" class="card-img-top" alt="Product imagessss...">
+        //               <div class="card-body">
+        //           <h4 class="card-title">${data[i].title}</h4>
+        //           <p class="card-text">${data[i].description}</p>
+        //           <div class="price-btn">
+        //             <h5> $${data[i].price}</h5>
+        //             <button type="button" class="addtocart">Add to cart</button>
+        //             </div>
+        //             </div>
+        //            </div>
+        //               </div>
+        //        `
+        //     }
+
+
+
+
         for (let i = 0; i < 6; i++) {
-            document.querySelector(".row-one").innerHTML +=
+          let title = data[i].title
+          let titlewords = title.split(' ')
+          let limitedtitile = titlewords.slice(0, 5).join(' ')
+          let description = data[i].description;
+          let words = description.split(' ');
+          let limitedWords = words.slice(0, 20).join(' ');
+
+          if (words.length > 20) {
+              limitedWords += '...';
+          }
+
+          document.querySelector(".row-one").innerHTML +=
               `
-                      <div class="col col-lg-4 col-md-6 col-sm-6 mt-3">
-                       <div class="card">
-                       <img src="${data[i].image}" class="card-img-top" alt="Product imagessss...">
+              <div class="col col-lg-4 col-md-6 col-sm-6 mt-3">
+                  <div class="card">
+                      <img src="${data[i].image}" class="card-img-top" alt="Product image">
                       <div class="card-body">
-                  <h4 class="card-title">${data[i].title}</h4>
-                  <p class="card-text">${data[i].description}</p>
-                  <div class="price-btn">
-                    <h5> $${data[i].price}</h5>
-                    <button type="button" class="addtocart">Add to cart</button>
-                    </div>
-                    </div>
-                   </div>
+                          <h4 class="card-title">${limitedtitile}</h4>
+                          <p class="card-text">${limitedWords}</p>
+                          <div class="price-btn">
+                              <h5>$${data[i].price}</h5>
+                              <button type="button" class="addtocart">Add to cart</button>
+                          </div>
                       </div>
-               `
-            }
+                  </div>
+              </div>
+              `;
+        }
+
+
+
 
             let productsShown = false;  // Add a flag to check if products have already been shown
 
@@ -42,6 +78,14 @@ fetch(url)
             
               // Add the products to the container
               for (let i = 6; i < 12; i++) {
+               
+               let title = data[i].title
+               let titlewords = title.split(' ')
+               let limitedtitile = titlewords.slice(0, 5).join(' ')
+               let description = data[i].description
+               let descriptionwords = description.split(' ')
+               let limiteddescription = descriptionwords.slice(0, 20).join(' ')
+
                 if (!data[i]) {
                   console.error(`Product at index ${i} is not defined.`);
                   continue;
@@ -53,8 +97,8 @@ fetch(url)
                  <div class="card">
                  <img src="${data[i].image}" class="card-img-top" alt="Product imagessss...">
                 <div class="card-body">
-            <h4 class="card-title">${data[i].title}</h4>
-            <p class="card-text">${data[i].description}</p>
+            <h4 class="card-title">${limitedtitile}</h4>
+            <p class="card-text">${limiteddescription}</p>
             <div class="price-btn">
               <h5> $${data[i].price}</h5>
               <button class="addtocart">Add to cart</button>
