@@ -84,7 +84,12 @@ fetch(url)
                let limitedtitile = titlewords.slice(0, 5).join(' ')
                let description = data[i].description
                let descriptionwords = description.split(' ')
-               let limiteddescription = descriptionwords.slice(0, 20).join(' ')
+               let limiteddescription = descriptionwords.slice(0, 18).join(' ')
+
+
+               if (descriptionwords.length > 20) {
+                limiteddescription += '...';
+            }
 
                 if (!data[i]) {
                   console.error(`Product at index ${i} is not defined.`);

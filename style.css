@@ -171,14 +171,35 @@ nav ul li a {
     transition: 0.6s;
     box-shadow: 2px 0px 20px 2px rgba(128, 128, 128, 0.381);
   }
+
   
+  @media(max-width:768px){
+.col .card {
+    text-align: left;
+    padding: 3% 1%;
+    height: 28em !important;
+    width: 20rem !important;
+    transition: 0.6s;
+    box-shadow: 2px 0px 20px 2px rgba(128, 128, 128, 0.381);
+  }
+  }
+  @media(max-width:568px){
+    .col .card {
+        text-align: left;
+        padding: 3% 1%;
+        height: 25em !important;
+        width: 18rem !important;
+        transition: 0.6s;
+        box-shadow: 2px 0px 20px 2px rgba(128, 128, 128, 0.381);
+      }
+      }
   .col .card:hover {
     z-index: 9999;
     cursor: pointer;
   }
   
   .col img {
-    height: 130px;
+    height: 120px;
     width: auto;
     margin: 0% auto;
   }
@@ -195,7 +216,7 @@ nav ul li a {
   }
   
   .col .card h5 {
-    color: black;
+    color: rgba(0, 0, 0, 0.5);
   }
   .price-btn {
         margin-top: 1em;
@@ -206,22 +227,21 @@ nav ul li a {
   .price-btn .addtocart {
     height: 2em;
     width: 7em;
-    background-color: transparent;
-    border: 2px solid blue;
-    font-weight: bold;
-    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    border-radius: 45px;
     transition: 0.6s;
   }
   .price-btn .addtocart:hover {
-    border: 2px solid black;
-    background-color: blue;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
   }
   .view {
     height: 2.2em;
     width: 8em;
     background-color: transparent;
-    border: 2px solid blue;
+    border: 2px solid rgba(0, 0, 0, 0.7);
     font-weight: bold;
     letter-spacing: 1px;
     border-radius: 8px;
@@ -230,9 +250,9 @@ nav ul li a {
   }
   
   .view:hover {
-    border: 2px solid black;
-    background-color: blue;
     color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
   }
   
   #viewless {
@@ -241,49 +261,8 @@ nav ul li a {
 
 
 
-  /* banner */
 
-  .banner-section {
-    display: flex;
-    flex-wrap: wrap;
-    height: 87vh;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.banner-div {
-    flex: 1 1 50%;
-    height: 50vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#banner-div1 {
-    background-image: url("./assets/men.webp");
-    background-size: cover;
-    background-position: center;
-}
-
-#banner-div2 {
-    background-image: url("./assets/women.webp");
-}
-
-.content {
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-.content h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.explore-btn {
+/* .explore-btn {
     padding: 10px 20px;
     font-size: 1.2em;
     color: white;
@@ -295,18 +274,5 @@ nav ul li a {
 
 .explore-btn:hover {
     background-color: rgba(0, 0, 0, 0.7);
-}
+} */
 
-@media(min-width: 769px) {
-    
-  .banner-section  {
-        height: fit-content;
-    }
-    .banner-div {
-        height: 100vh;
-    }
-
-   .content h1 {
-        font-size: 3em;
-    }
-}
