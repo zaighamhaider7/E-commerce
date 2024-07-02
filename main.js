@@ -42,9 +42,9 @@ fetch(url)
 
           document.querySelector(".row-one").innerHTML +=
               `
-              <div class="col col-lg-4 col-md-6 col-sm-6 mt-3">
-                  <div class="card">
-                      <img src="${data[i].image}" class="card-img-top" alt="Product image">
+              <div class="col col-lg-4 col-md-6 col-sm-6 mt-3 col-align">
+                  <div class="card product-card">
+                      <img src="${data[i].image}" class="card-img-top product-img" alt="Product image">
                       <div class="card-body">
                           <h4 class="card-title">${limitedtitile}</h4>
                           <p class="card-text">${limitedWords}</p>
@@ -98,9 +98,9 @@ fetch(url)
             
                 const productHTML = 
                 `
-                <div class="col col-lg-4 col-md-6 col-sm-6 mt-3">
-                 <div class="card">
-                 <img src="${data[i].image}" class="card-img-top" alt="Product imagessss...">
+                <div class="col col-lg-4 col-md-6 col-sm-6 mt-3 col-align">
+                 <div class="card product-card">
+                 <img src="${data[i].image}" class="card-img-top product-img" alt="Product imagessss...">
                 <div class="card-body">
             <h4 class="card-title">${limitedtitile}</h4>
             <p class="card-text">${limiteddescription}</p>

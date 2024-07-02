@@ -157,13 +157,13 @@ nav ul li a {
     align-items: center;
   }
   
-  .col {
+ .col-align{
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .col .card {
+  .col-align .product-card {
     text-align: left;
     padding: 3% 1%;
     height: 25em !important;
@@ -174,7 +174,7 @@ nav ul li a {
 
   
   @media(max-width:768px){
-.col .card {
+.col-align .product-card {
     text-align: left;
     padding: 3% 1%;
     height: 28em !important;
@@ -184,7 +184,7 @@ nav ul li a {
   }
   }
   @media(max-width:568px){
-    .col .card {
+    .col-align .product-card {
         text-align: left;
         padding: 3% 1%;
         height: 25em !important;
@@ -193,30 +193,30 @@ nav ul li a {
         box-shadow: 2px 0px 20px 2px rgba(128, 128, 128, 0.381);
       }
       }
-  .col .card:hover {
+  .col-align .product-card:hover {
     z-index: 9999;
     cursor: pointer;
   }
   
-  .col img {
+  .col-align .product-img {
     height: 120px;
     width: auto;
     margin: 0% auto;
   }
   
-  .col .card a {
+  .col-align .card a {
     color: black;
     text-decoration: none;
     transition: 0.3s;
   }
   
-  .col .card a:hover {
+  .col-align .card a:hover {
     text-decoration: underline !important;
     color: #0000ee;
   }
   
-  .col .card h5 {
-    color: rgba(0, 0, 0, 0.5);
+  .col-align .card h5 {
+    color: rgba(0, 0, 0, 0.7);
   }
   .price-btn {
         margin-top: 1em;
@@ -259,20 +259,62 @@ nav ul li a {
     display: none;
   }
 
-
-
-
-/* .explore-btn {
-    padding: 10px 20px;
+/* cards section */
+#card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+.cardimg {
+  height: 10em;
+  width: 10em;
+  /* border: 5px solid #ffbe33; */
+  border-radius: 80%;
+  overflow: hidden;
+  margin: 0% auto;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* object-fit: cover; */
+  /* object-position: center !important; */
+}
+img{
+  transition: 0.3s;
+}
+.card:hover img{
+  transform: scale(1.1);
+}
+ .explore-btn {
+    height: 2em;
+    width: 7em;
     font-size: 1.2em;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
+    border-radius: 45px;
 }
 
 .explore-btn:hover {
     background-color: rgba(0, 0, 0, 0.7);
-} */
+} 
+
+@media (max-width:1115px){
+  #offercard{
+    text-align: center;
+  }
+}
+@media(max-width:780px){
+  #card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+  }
+}
 
