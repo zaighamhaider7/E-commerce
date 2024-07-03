@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A-Z FIT</title>
-    <!-- link css -->
+   
+    
     <link rel="stylesheet" href="style.css" />
-    <!-- BS CSS -->
+   
     <link
       rel="stylesheet"
       href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
-    <!-- BS JS -->
+    
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- font awesome  -->
+   
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -21,120 +22,63 @@
   </head>
   <body>
    <section id="hero">
-     <!-- webnav start -->
-     <nav>
-      <ul>
-        <li>
-          <a href="#">Men</a>
-        </li>
-        <li>
-          <a href="#">Women</a>
-        </li>
-        <li>
-          <a href="#">Kids</a>
-        </li>
-        <li>
-          <a href="#">Sale</a>
-        </li>
-      </ul>
-      <ul id="logo">
-        <!-- <i
-          class="fa-solid fa-code"
-          style="font-size: 3rem; font-weight: bold"
-        ></i> -->
-        <a href="index.html" style="text-decoration: none; color: #fff;"><h1 style="font-weight: bold; font-style: italic;">AZ-FIT</h1></a>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">Rerun</a>
-        </li>
-        <li>
-          <a href="#">Stores</a>
-        </li>
-        <li>
-          <a href="./login.html">
-            <img
-              src="./assets/icons8-user-60.png"
-              height="30em"
-              width="auto"
-              alt=""
-            />
-          </a>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="position-relative"
-            style="
-              width: fit-content;
-              background-color: transparent;
-              border: none;
-              margin-left: 0%;
-              padding-left: 0%;
-            "
-          >
-            <img
-              src="./assets/icons8-add-to-cart-60.png"
-              height="30em"
-              width="auto"
-              alt=""
-            />
-            <span
-              class="position-absolute top-0 start-85 translate-middle badge rounded-pill bg-success qty"
-            >
-              0
-            </span>
-          </button>
-        </li>
-      </ul>
-    </nav>
-     <!-- responsive nav -->
-     <div class="respnav">
-      <div>
-        <img
-          src="./assets/icons8-hamburger-menu-60.png"
-          height="55em"
-          width="55em"
-          alt=""
-        />
-      </div>
 
-      <!-- <i
-        class="fa-solid fa-code"
-        id="logo-icon"
-        style="font-size: 3rem; font-weight: bold"
-      ></i> -->
-      <a href="index.html" style="text-decoration: none; color: #fff;"><h1 style="font-weight: bold; font-style: italic;">AZ-FIT</h1></a>
-      <div class="icons">
-        <a href="./login.html">
-          <img
-            src="./assets/icons8-user-60.png"
-            height="30em"
-            width="auto"
-            alt=""
-          />
-        </a>
-        <button
-          type="button"
-          class="position-relative"
-          style="
-            width: fit-content;
-            background-color: transparent;
-            border: none;
-            margin-left: 0%;">
-          <img
-            src="./assets/icons8-add-to-cart-60.png"
-            height="30em"
-            width="auto"
-            alt=""/>
-          <span
-            class="position-absolute top-0 start-85 translate-middle badge rounded-pill bg-success qty">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navigation">
+      <div class="container-fluid">
+          <a class="navbar-brand color-dark " href="index.html">
+            <h2 style="text-decoration: none; color: #fff; font-weight: bold; font-style: italic;">
+              A-Z FIT
+            </h2>
+          </a>
+          <button class="navbar-toggler night" id="hammenu" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                      <a class="nav-link " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#product">Products</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#offercard">Sale</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#Categories">
+                        Categories
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                      Contact
+                    </a>
+                </li>
+              </ul>
+              <form class="d-flex  ">
+                  <label id="dark-change"></label>
+                  <input class="form-control me-2 bg-transparent " type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light me-2" type="submit">Search</button>
+                  <button type="button" class="btn btn-transparent position-relative">
+
+                      <img src="./assets/icons8-add-to-cart-60.png" style="width: 2em; height: 2em;" alt="">
+                      <span
+            class="position-absolute top-5 start-85 translate-middle badge rounded-pill bg-success" id="qty"
+          >
             0
           </span>
-        </button>
+                  </button>
+              </form>
+
+          </div>
       </div>
-    </div>
-    <!-- hero-desciption -->
+
+  </nav>
+
+
+  <!-- hero sec -->
     <div class="hero-sec-desc">
 
       <h2 class="heading1 text-center">
@@ -144,15 +88,16 @@
           Discover Timeless Elegance in Every Stitch
       </h5>
       <button class="  text-white hero-sec-btn ">
-          Order Now
+          Shop Now
       </button>
   </div>
-  <!-- <div id="overlay"></div> -->
+
+  <div id="overlay"></div>
    </section>
 
     <!-- second section -->
-    <section id="second">
-      <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold; font-style: oblique;margin-bottom: 1em;">Featured Products</h2>
+    <section id="second" >
+      <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold; font-style: oblique;margin-bottom: 1em;" id="product">Featured Products</h2>
       <div class="container products">
         <div class="row row-one mb-3"></div>
       </div>
@@ -166,7 +111,6 @@
         <button id="viewless" class="view">View Less</button>
       </div>
     </section>
-
 
 
  <!-- card section -->
@@ -233,7 +177,7 @@
 
  <!-- third section -->
  <section id="second">
-  <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold; font-style: oblique;margin-bottom: 1em;">Categories</h2>
+  <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold; font-style: oblique;margin-bottom: 1em;" id="Categories">Categories</h2>
   <div class="container products">
     <div class="row row-three mb-3"></div>
   </div>
@@ -248,10 +192,9 @@
   </div>
 </section>
 
-
 <!-- Contact Section -->
 <section class="contact">
-  <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold; font-style: oblique;margin-bottom: 1em;">Contact Us</h2>
+  <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold; font-style: oblique;margin-bottom: 1em;" id="contact">Contact Us</h2>
   <form>
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
@@ -280,12 +223,12 @@
     <script>
         $(document).ready(
           function(){
-            $('.addtocart').click(
+            $('#add').click(
               function(){
                var z;
-               z=$('.qty').text();
+               z=$('#qty').text();
                z=Number(z)+1;
-               $('.qty').text(z);
+               $('#qty').text(z);
               }
             )
           }

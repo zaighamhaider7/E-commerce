@@ -16,127 +16,33 @@
 </head>
 
 <body>
-       <!-- webnav start -->
-       <nav>
-        <ul>
-          <li>
-            <a href="#">Men</a>
-          </li>
-          <li>
-            <a href="#">Women</a>
-          </li>
-          <li>
-            <a href="#">Kids</a>
-          </li>
-          <li>
-            <a href="#">Sale</a>
-          </li>
-        </ul>
-        <ul id="logo">
-          <!-- <i
-            class="fa-solid fa-code"
-            style="font-size: 3rem; font-weight: bold"
-          ></i> -->
-          <a href="index.html" style="text-decoration: none; color: black;"><h1 style="font-weight: bold; font-style: italic;">AZ-FIT</h1></a>
-        </ul>
-        <ul>
-          <li>
-            <a href="#">Rerun</a>
-          </li>
-          <li>
-            <a href="#">Stores</a>
-          </li>
-          <li>
-            <a href="./login.html">
-              <img
-                src="./assets/icons8-user-60 (2).png"
-                height="30em"
-                width="auto"
-                alt=""
-              />
-            </a>
-          </li>
-          <li>
-            <button
-              type="button"
-              class="position-relative"
-              style="
-                width: fit-content;
-                background-color: transparent;
-                border: none;
-                margin-left: 0%;
-                padding-left: 0%;
-              "
-            >
-              <img
-                src="./assets/icons8-add-to-cart-60 (2).png"
-                height="30em"
-                width="auto"
-                alt=""
-              />
-              <span
-                class="position-absolute top-0 start-85 translate-middle badge rounded-pill bg-success qty"
-              >
-                0
-              </span>
-            </button>
-          </li>
-        </ul>
-      </nav>
-       <!-- responsive nav -->
-       <div class="respnav">
-        <div>
-          <img
-            src="./assets/icons8-hamburger-menu-60 (2).png"
-            height="55em"
-            width="55em"
-            alt=""
-          />
-        </div>
-  
-        <!-- <i
-          class="fa-solid fa-code"
-          id="logo-icon"
-          style="font-size: 3rem; font-weight: bold"
-        ></i> -->
-        <a href="index.html" style="text-decoration: none; color: black;"><h1 style="font-weight: bold; font-style: italic;">AZ-FIT</h1></a>  
-        <div class="icons">
-          <a href="./login.html">
-            <img
-              src ="./assets/icons8-user-60 (2).png"
-              height="30em"
-              width="auto"
-              alt=""
-            />
-          </a>
-          <button type="button" class="position-relative" style=" width: fit-content; background-color: transparent; border: none; margin-left: 0%;">
-            <img src="./assets/icons8-add-to-cart-60 (2).png"height="30em" width="auto" alt=""/>
-            <span class="position-absolute top-0 start-85 translate-middle badge rounded-pill bg-success qty">
-              0
-            </span>
-          </button>
-        </div>
-      </div>
+     
+  <nav id="navigation">
+    <div class="container nav-log">
+        <a class="navbar-brand color-dark " href="index.html">
+          <h2 style="text-decoration: none; color: black; font-weight: bold; font-style: italic;">
+            A-Z FIT
+          </h2>
+        </a>
+
+        <h4>
+          <a href="login.html">LOGIN</a>
+        </h4>
+
+</nav>
 
 
 
 
 
 
-<!-- signup start -->
     <div id="signup-outer" class="container">
         <div class="loginpage">
-            <h1 style="letter-spacing: 1px;">
-                Wellcome to AZ-FIT.
-            </h1>
-            <h2>
-                Create Your Account...
-            </h2>
-
-        </div>
-        <div class="loginpage">
             <form>
-                <img src="./assets/sign up icon.png" height="70px" width="auto" alt="">
+                <!-- <img src="./assets/sign up icon.png" height="70px" width="auto" alt=""> -->
+                <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold; font-style: oblique;">
+                  SIGN UP
+                 </h2>
                 <div>
                     <input type="text" id="fullname" placeholder="Enter Your Full Name">
                     <p id="nameerror" class="error"></p>
@@ -156,13 +62,6 @@
                     <p id="ageerror" class="error"></p>
                 </div>
 
-                <div>
-                    <select name="Gender">
-                        <option value="select">Select Gender</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                    </select>
-                </div>
                   <div id="msg" class="error"></div>
                 <button type="button" id="signup-btn">
                     Sign Up

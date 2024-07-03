@@ -28,7 +28,7 @@ fetch(url)
                           <p class="card-text">${limitedWords}</p>
                           <div class="price-btn">
                               <h5>$${data[i].price}</h5>
-                              <button type="button" class="addtocart">Add to cart</button>
+                              <button type="button" class="addtocart" id="add">Add to cart</button>
                           </div>
                       </div>
                   </div>
@@ -234,3 +234,21 @@ document.getElementById("viewless-2").addEventListener("click", () => {
   })
     
 
+
+
+
+
+    // nav bar scroll
+    window.addEventListener("scroll", () => {
+      let verticalScrollpx = window.scrollY || window.pageYOffset
+      let arrow = document.getElementById('navigation');
+    
+      if (verticalScrollpx < 500) {
+          arrow.style.backgroundColor = "rgba(0, 0, 0, 0.678)";
+      }
+    
+    
+     else if (verticalScrollpx < 1600 && verticalScrollpx > 500) {
+        arrow.style.backgroundColor = "black";
+      }
+    })
