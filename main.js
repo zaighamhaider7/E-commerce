@@ -248,7 +248,7 @@ document.getElementById("viewless-2").addEventListener("click", () => {
       }
     
     
-     else if (verticalScrollpx < 1600 && verticalScrollpx > 500) {
+     else if (verticalScrollpx < 1900 && verticalScrollpx > 500) {
         arrow.style.backgroundColor = "black";
       }
     })
