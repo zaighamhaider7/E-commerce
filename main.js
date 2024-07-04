@@ -12,9 +12,9 @@ fetch(url)
           let limitedtitile = titlewords.slice(0, 5).join(' ')
           let description = data[i].description;
           let words = description.split(' ');
-          let limitedWords = words.slice(0, 20).join(' ');
+          let limitedWords = words.slice(0, 18).join(' ');
 
-          if (words.length > 20) {
+          if (words.length > 18) {
               limitedWords += '...';
           }
 
@@ -65,7 +65,7 @@ fetch(url)
                let limiteddescription = descriptionwords.slice(0, 18).join(' ')
 
 
-               if (descriptionwords.length > 20) {
+               if (descriptionwords.length > 18) {
                 limiteddescription += '...';
             }
 
@@ -129,9 +129,9 @@ fetch(url2)
           let limitedtitile = titlewords.slice(0, 5).join(' ')
           let description = product[i].description;
           let words = description.split(' ');
-          let limitedWords = words.slice(0, 20).join(' ');
+          let limitedWords = words.slice(0, 18).join(' ');
 
-          if (words.length > 20) {
+          if (words.length > 18) {
               limitedWords += '...';
           }
 
@@ -179,7 +179,7 @@ fetch(url2)
                  let limiteddescription = descriptionwords.slice(0, 18).join(' ')
   
   
-                 if (descriptionwords.length > 20) {
+                 if (descriptionwords.length > 18) {
                   limiteddescription += '...';
               }
   
