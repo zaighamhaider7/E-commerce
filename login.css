@@ -14,6 +14,7 @@ body {
   .nav-log h4 a{
     color: black !important;
     text-decoration: none !important;
+    font-weight: bold !important;
   }
  /* login start */
  #login-outer {
@@ -40,7 +41,7 @@ body {
      height: 3em;
      width: 22em;
      border-radius: 8px;
-     border: 2px solid gray;
+     border: 1px solid gray;
  }
  @media(max-width:560px) {
     #login-outer {
@@ -70,7 +71,7 @@ body {
          height: 3em;
          width: 19em;
          border-radius: 8px;
-         border: 2px solid gray;
+         border: 1px solid gray;
      }
     
  }
@@ -93,7 +94,7 @@ body {
         height: 3em;
         width: 16em;
         border-radius: 8px;
-        border: 2px solid gray;
+        border: 1px solid gray;
     }
 }
 

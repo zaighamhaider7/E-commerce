@@ -28,7 +28,7 @@ fetch(url)
                           <p class="card-text">${limitedWords}</p>
                           <div class="price-btn">
                               <h5>$${data[i].price}</h5>
-                              <button type="button" class="addtocart" id="add">Add to cart</button>
+                              <button type="button" class="addtocart" onclick="cart()">Add to cart</button>
                           </div>
                       </div>
                   </div>
@@ -84,7 +84,7 @@ fetch(url)
             <p class="card-text">${limiteddescription}</p>
             <div class="price-btn">
               <h5> $${data[i].price}</h5>
-              <button class="addtocart">Add to cart</button>
+              <button class="addtocart" onclick="cart()">Add to cart</button>
               </div>
               </div>
              </div>
@@ -145,7 +145,7 @@ fetch(url2)
                           <p class="card-text">${limitedWords}</p>
                           <div class="price-btn">
                               <h5>$${product[i].price}</h5>
-                              <button type="button" class="addtocart">Add to cart</button>
+                              <button type="button" class="addtocart" onclick="cart()">Add to cart</button>
                           </div>
                       </div>
                   </div>
@@ -198,7 +198,7 @@ fetch(url2)
               <p class="card-text">${limiteddescription}</p>
               <div class="price-btn">
                 <h5> $${product[i].price}</h5>
-                <button class="addtocart">Add to cart</button>
+                <button class="addtocart" onclick="cart()">Add to cart</button>
                 </div>
                 </div>
                </div>
@@ -232,12 +232,7 @@ document.getElementById("viewless-2").addEventListener("click", () => {
   document.getElementById("viewless-2").style.display = "none";
   document.querySelector(".row-four").style.display = "none"
   })
-    
-
-
-
-
-
+ 
     // nav bar scroll
     window.addEventListener("scroll", () => {
       let verticalScrollpx = window.scrollY || window.pageYOffset
@@ -252,3 +247,49 @@ document.getElementById("viewless-2").addEventListener("click", () => {
         arrow.style.backgroundColor = "black";
       }
     })
+
+// add to cart
+function cart(){
+  let qty = document.getElementById("qty");
+  qty.textContent++;
+}
+
+
+
+
+// splash screen
+setTimeout(() => {
+  document.querySelector(".logo").style.display = "none";
+}, 4000);
+
+
+// splash screen gsap
+
+gsap.from("#h1",{
+  x:-500,
+  duration:1,
+  delay:0.5
+})
+gsap.from("#woo",{
+  y:-500,
+  duration:1,
+  delay:1
+})
+
+
+
+    // ad js
+
+  //   setTimeout(() => {
+  //     document.querySelector(".addouter").style.display = "flex";
+  //     document.getElementById("container").style.filter = `blur(10px)`
+  //     document.getElementById("body").style.overflow = `hidden`
+  // }, 6000);
+  
+  
+  
+  // document.querySelector(".close").addEventListener("click",()=>{
+  //     document.querySelector(".addouter").style.display = "none"
+  //     document.getElementById("container").style.filter = `blur(0px)`
+  //     document.getElementById("body").style.overflow = `auto`
+  // })

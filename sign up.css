@@ -15,6 +15,7 @@ body {
   .nav-log h4 a{
     color: black !important;
     text-decoration: none !important;
+    font-weight: bold !important;
   }
 
 
@@ -43,7 +44,7 @@ form {
      height: 3em;
      width: 22em;
     border-radius: 8px;
-    border: 2px solid gray;
+    border: 1px solid gray;
  }
 @media(max-width:450px){
     form {
@@ -62,10 +63,18 @@ form {
         height: 2.5em;
         width: 19em;
        border-radius: 8px;
-       border: 2px solid gray;
+       border: 1px solid gray;
     }
     .error{
         width: 16em;
+    }
+    #signup-outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        width: 100%;
+        margin-bottom: 2em;
     }
 }
 @media(max-width:400px) {
@@ -87,8 +96,9 @@ form {
        height: 3em;
        width: 16em;
        border-radius: 8px;
-       border: 2px solid gray;
+       border: 1px solid gray;
    }
+  
 }
 #signup-btn{
     height: 2.5em;

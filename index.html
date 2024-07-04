@@ -21,8 +21,21 @@
     />
   </head>
   <body>
-   <section id="hero">
+    <!-- splash screen -->
 
+    <div class="logo">
+      <div class="logoinner">
+          <h1 id="woo">
+              AZ-
+          </h1>
+          <h1 id="h1">
+              FIT
+          </h1>
+      </div>
+  </div>
+
+
+   <section id="hero">
     <nav class="navbar navbar-expand-lg navbar-light" id="navigation">
       <div class="container-fluid">
           <a class="navbar-brand color-dark " href="index.html">
@@ -44,9 +57,6 @@
                       <a class="nav-link" href="#product">PRODUCT</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link " href="#offercard">SALE</a>
-                  </li>
-                  <li class="nav-item">
                       <a class="nav-link" href="#Categories">
                         CATEGORIES
                       </a>
@@ -66,14 +76,14 @@
                   <label id="dark-change"></label>
                   <input class="form-control me-2 bg-transparent " type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-light me-2" type="submit">Search</button>
-                  <button type="button" class="btn btn-transparent position-relative">
+                  <button  type="button" class="btn btn-transparent position-relative">
 
                       <img src="./assets/icons8-add-to-cart-60.png" style="width: 2em; height: 2em;" alt="">
                       <span
             class="position-absolute top-5 start-85 translate-middle badge rounded-pill bg-success" id="qty"
           >
             0
-          </span>
+          </span >
                   </button>
               </form>
 
@@ -100,7 +110,7 @@
   <div id="overlay"></div>
    </section>
 
-    <!-- second section -->
+    <!-- product section -->
     <section id="second" >
       <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold; font-style: oblique;margin-bottom: 1em;" id="product">Featured Products</h2>
       <div class="container products">
@@ -180,7 +190,7 @@
 </section>
 
 
- <!-- third section -->
+ <!-- categories section -->
  <section id="second">
   <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold; font-style: oblique;margin-bottom: 1em;" id="Categories">Categories</h2>
   <div class="container products">
@@ -200,7 +210,7 @@
 <!-- Contact Section -->
 <section class="contact">
   <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold; font-style: oblique;margin-bottom: 1em;" id="contact">Contact Us</h2>
-  <form>
+  <form action="https://formsubmit.co/zaighamhaider8@gmail.com" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" placeholder="Your Message" required></textarea>
@@ -211,84 +221,60 @@
 
 
  <!-- Footer -->
-<footer class="text-center text-lg-start bg-body-tertiary text-muted footer">
-  <!-- Section: Social media -->
+<footer class="text-center text-lg-start  text-muted footer">
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
     <div class="me-5 d-none d-lg-block">
       <span>Get connected with us on social networks:</span>
     </div>
-    <!-- Left -->
 
-    <!-- Right -->
     <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
+      <a href="" class="me-4 text-reset" style="font-size: 1.5em;">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="" class="me-4 text-reset">
+      <a href="" class="me-4 text-reset"  style="font-size: 1.5em;">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="" class="me-4 text-reset">
+      <a href="" class="me-4 text-reset"  style="font-size: 1.5em;">
         <i class="fab fa-github"></i>
       </a>
     </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
 
-  <!-- Section: Links  -->
+  </section>
+
   <section class="">
     <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
       <div class="row mt-3">
-        <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
+            <i class="fas fa-gem me-3"></i>A-Z FIT
           </h6>
           <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
+            we are dedicated to providing the best quality products to our customers. Our mission is to offer stylish and comfortable clothing that fits your lifestyle. We believe in sustainability and work hard to ensure our products are eco-friendly.
           </p>
         </div>
-        <!-- Grid column -->
 
-        <!-- Grid column -->
+
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
-            Products
+            Sections
           </h6>
           <p>
-            <a href="#!" class="text-reset">Angular</a>
+            <a href="index.html" class="text-reset">HOME</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">React</a>
+            <a href="#product" class="text-reset">PRODUCT</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Vue</a>
+            <a href="#Categories" class="text-reset">CATEGORIES</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Laravel</a>
+            <a href="#contact" class="text-reset">CONTACT</a>
           </p>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
+      
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
+            Help center
           </h6>
           <p>
             <a href="#!" class="text-reset">Pricing</a>
@@ -303,41 +289,47 @@
             <a href="#!" class="text-reset">Help</a>
           </p>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
+       
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p><i class="fas fa-home me-3"></i> Karachi,Pakistan</p>
           <p>
             <i class="fas fa-envelope me-3"></i>
-            info@example.com
+            az@example.com
           </p>
           <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
           <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
         </div>
-        <!-- Grid column -->
       </div>
-      <!-- Grid row -->
     </div>
   </section>
-  <!-- Section: Links  -->
 
-  <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    © 2024 Copyright:
+    <a class="text-reset fw-bold" href="#!">A-Z FIT</a>
   </div>
-  <!-- Copyright -->
 </footer>
-<!-- Footer -->
 
 
 
 
+<!-- ad -->
 
+<!-- <div class="addouter">
+  <div class="add">
+      <h3>Ad</h3>
+      <img src="./demo.jpeg" height="80%" width="90%" alt="">
 
+      <div class="btns">
+          <button class="btn close">
+              Close
+          </button>
+          <button class="btn open">
+              Open
+          </button>
+      </div>
+  </div>
+ </div> -->
 
 
 
@@ -349,21 +341,9 @@
     <!-- jquery link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script>
-        $(document).ready(
-          function(){
-            $('#add').click(
-              function(){
-               var z;
-               z=$('#qty').text();
-               z=Number(z)+1;
-               $('#qty').text(z);
-              }
-            )
-          }
-        )
-      </script>
-
+  
+      <!-- gsap -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
