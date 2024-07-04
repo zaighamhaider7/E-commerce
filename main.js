@@ -258,23 +258,23 @@ function cart(){
 
 
 // splash screen
-setTimeout(() => {
-  document.querySelector(".logo").style.display = "none";
-}, 4000);
+// setTimeout(() => {
+//   document.querySelector(".logo").style.display = "none";
+// }, 3000);
 
 
 // splash screen gsap
 
-gsap.from("#h1",{
-  x:-500,
-  duration:1,
-  delay:0.5
-})
-gsap.from("#woo",{
-  y:-500,
-  duration:1,
-  delay:1
-})
+// gsap.from("#h1",{
+//   x:-1000,
+//   duration:0.5,
+//   delay:0.5
+// })
+// gsap.from("#woo",{
+//   y:-1000,
+//   duration:0.5,
+//   delay:1
+// })
 
 
 
