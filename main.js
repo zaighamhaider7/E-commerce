@@ -257,39 +257,20 @@ function cart(){
 
 
 
-// splash screen
-// setTimeout(() => {
-//   document.querySelector(".logo").style.display = "none";
-// }, 3000);
+// loader
+setTimeout(() => {
+  document.querySelector(".loader-container").style.display = "none";
+}, 3000);
 
-
-// splash screen gsap
-
-// gsap.from("#h1",{
-//   x:-1000,
-//   duration:0.5,
-//   delay:0.5
-// })
-// gsap.from("#woo",{
-//   y:-1000,
-//   duration:0.5,
-//   delay:1
-// })
+// loader gsap
+gsap.to('.box', {
+  yoyo: true,
+  repeat: -1,
+  duration: 1,
+  stagger: 0.2,
+  scale: 0.7,
+  ease: 'power2.inOut'
+});
 
 
 
-    // ad js
-
-  //   setTimeout(() => {
-  //     document.querySelector(".addouter").style.display = "flex";
-  //     document.getElementById("container").style.filter = `blur(10px)`
-  //     document.getElementById("body").style.overflow = `hidden`
-  // }, 6000);
-  
-  
-  
-  // document.querySelector(".close").addEventListener("click",()=>{
-  //     document.querySelector(".addouter").style.display = "none"
-  //     document.getElementById("container").style.filter = `blur(0px)`
-  //     document.getElementById("body").style.overflow = `auto`
-  // })
