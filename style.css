@@ -15,7 +15,7 @@ body {
 #navigation {
   padding: 1% 2% !important;
   position: fixed !important;
-  top: 8.4% !important;
+  top: 50px !important;
   width: 100%;
   z-index: 3 !important;
   background-color: rgba(0, 0, 0, 0.644);
@@ -338,11 +338,11 @@ textarea {
 
 /* marquee */
 marquee {
-  /* overflow: hidden; */
-  background-color: #333 !important;
+  background-color: rgba(0, 0, 0, 0.644);
+  border-bottom: 1px solid #fff;
+  /* background-color: #333 !important; */
   color: #fff;
   height: 50px; 
-  /* line-height: 50px; */
   z-index: 3;
   position: fixed !important;
   top: 0% !important;

@@ -236,15 +236,18 @@ document.getElementById("viewless-2").addEventListener("click", () => {
     // nav bar scroll
     window.addEventListener("scroll", () => {
       let verticalScrollpx = window.scrollY || window.pageYOffset
-      let arrow = document.getElementById('navigation');
+      let nav = document.getElementById('navigation');
+      let marquee = document.getElementById("marquee");
     
       if (verticalScrollpx < 500) {
-          arrow.style.backgroundColor = "rgba(0, 0, 0, 0.678)";
+          nav.style.backgroundColor = "rgba(0, 0, 0, 0.678)";
+          marquee.style.backgroundColor = "rgba(0, 0, 0, 0.678)";
       }
     
     
      else if (verticalScrollpx < 1900 && verticalScrollpx > 500) {
-        arrow.style.backgroundColor = "black";
+        nav.style.backgroundColor = "black";
+        marquee.style.backgroundColor ="black";
       }
     })
 
