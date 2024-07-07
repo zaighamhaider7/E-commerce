@@ -277,3 +277,14 @@ gsap.to('.box', {
 
 
 
+// advertisement
+setTimeout(function () {
+  document.getElementById('ad-bodyy').style.display = 'flex';
+  document.getElementById('advertisement').style.display = 'block';
+  document.getElementById('body').style.overflow = 'hidden';
+}, 6000); 
+
+document.getElementById('closeAd').addEventListener('click', function () {
+  document.getElementById('ad-bodyy').style.display = 'none';
+  document.getElementById('body').style.overflow = 'visible';
+});

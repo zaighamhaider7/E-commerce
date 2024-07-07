@@ -75,6 +75,7 @@ form {
         height: 90vh;
         width: 100%;
         margin-bottom: 2em;
+        margin-top: 2em;
     }
 }
 @media(max-width:400px) {
