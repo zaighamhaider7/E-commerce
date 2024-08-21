@@ -9,7 +9,7 @@ document.getElementById("login-btn").addEventListener("click", () => {
     let pass = document.getElementById("form2Example2").value.match(passwordpattern)
 
     if (email && pass) {
-        window.location.href = "index.html"
+        window.location.href = "dashboard.html"
         document.getElementById("msg").innerText = ""
         document.getElementById("passerror").innerText = ""
         document.getElementById("emailerror").innerText = ""
